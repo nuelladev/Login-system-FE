@@ -9,6 +9,8 @@ This project is a simple login system frontend designed to integrate with a Spri
 - **Responsive Design**: The interface is fully responsive and works on both desktop and mobile devices.
 - **Aesthetics**: The login system features an animated, aesthetically pleasing design with a "glassmorphism" effect.
 
+![Login System Screenshot](https://github.com/nuelladev/Login-system-FE/blob/master/Screenshot%20(244).png)
+
 ## Current Status
 The project is currently under construction. The frontend design has been implemented and includes form validation as well as animations. The next steps involve integrating the frontend with the backend API for JWT authentication.
 
