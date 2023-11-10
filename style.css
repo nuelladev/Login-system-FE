@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* A soft blue gradient */
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .welcome-column, .form-column {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .welcome-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding: 0 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-column h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .welcome-column p {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+  
+  .form-column {
+    background: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    max-width: 350px; 
+  }
+  
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #f6d365, #fda085, #f6d365, #fda085);
+    animation: slidebg 4s linear infinite;
+  }
+  
+  button:hover {
+    background-position: right center; 
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position: +200% center;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .welcome-column, .form-column {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .welcome-column {
+      text-align: center;
+      padding: 0 20px;
+      order: 1; /
+    }
+  
+    .form-column {
+      padding: 20px;
+      width: 80%; 
+      order: 2; 
+    }
+  }
+  
